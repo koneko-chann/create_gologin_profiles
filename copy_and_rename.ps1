@@ -9,7 +9,7 @@
     $shadowCopyVolume = ($shadowCopy -split "`n" | Select-String "Shadow Copy Volume:") -replace "Shadow Copy Volume:", ""
 
     # Define variables
-    $profileId = "66af3d3ac018fe77465f5218"
+    $profileId = "66af3df3342402fab05f2005"
     $sourceDir = "C:\Users\ADMIN\AppData\Local\Temp\GoLogin\profiles\$profileId"
     $shadowSourceDir = $shadowCopyVolume + ($sourceDir -replace "C:", "")
 
